@@ -73,6 +73,20 @@ $DestinationFolder = "G$\Software\SharePoint_CUs"
     Write-Host "Downloaded file: $fileName"
     }
 	
+# Define the URL of the PowerShell script on GitHub
+$scriptUrl = "https://raw.githubusercontent.com/hungpham2802/hungpham2802/main/InstallPatches.ps1"
+
+# Define the local file path for the downloaded script
+$localScriptPath = Join-Path -Path $localFolder -ChildPath "InstallPatches.ps1"
+
+try {
+    # Download the script from the GitHub URL
+    Invoke-WebRequest -Uri $scriptUrl -OutFile $localScriptPath
+    
+} catch {
+    Write-Host "An error occurred: $_.Exception.Message"
+}
+
 #copy to another server
 
 foreach ($Server in $servers) {
