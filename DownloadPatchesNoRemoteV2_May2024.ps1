@@ -31,18 +31,18 @@ if($farm.BuildVersion.Major -eq 16)
 if ($farm.BuildVersion.Build -gt 14000) {
     Write-Host "SharePoint SE is installed"
 	$spVersion = "SharePoint Server Subscription Edition"
-	$spVersionNumber = "16.0.17328.20246-April2024"
+	$spVersionNumber = "16.0.17328.20292-May2024"
 	
 	$scriptUrl = "https://raw.githubusercontent.com/hungpham2802/hungpham2802/main/Install-SPSE_Fix.ps1"
 	
 } elseif ($farm.BuildVersion.Build -gt 10000) {
     Write-Host "SharePoint 2019 is installed"
 	$spVersion = "SharePoint 2019"
-	$spVersionNumber = "16.0.10409.20027-April2024"
+	$spVersionNumber = "16.0.10410.20003-May2024"
 } elseif ($farm.BuildVersion.Build -gt 4107) {
     Write-Host "SharePoint 2016 is installed"
 	$spVersion = "SharePoint 2016"
-	$spVersionNumber = "16.0.5443.1000-April2024"
+	$spVersionNumber = "16.0.5448.1000-May2024"
 }
 else {
     Write-Host "Unknown SharePoint version"
