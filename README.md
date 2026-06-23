@@ -48,7 +48,7 @@ Get-SPCOrphanedUser -AllSites | Export-SPCReport -Format HTML -IncludeSummary
 I'm open to **fractional SharePoint admin retainers** and **consulting engagements** for SMBs who need an experienced hand without the full-time hire.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/hungpham2802)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:hung@example.com)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:pham.ngoc.hung86@gmail.com)
 
 ---
 
